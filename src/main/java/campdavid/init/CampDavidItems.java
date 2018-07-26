@@ -1,4 +1,4 @@
-/*package campdavid.init;
+package campdavid.init;
 
 
 import campdavid.items.BasicItem;
@@ -41,4 +41,4 @@ public  class CampDavidItems {
 	public static void registerRender(Item item) {
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 	}
-}*/
+}

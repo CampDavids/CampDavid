@@ -7,6 +7,10 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
+import campdavid.init.CampDavidBlocks;
+import campdavid.init.CampDavidItems;
+import campdavid.init.RenderHandler;
+
 //import campdavid.init.CampDavidBlocks;
 //import campdavid.init.CampDavidItems;
 
@@ -34,9 +38,9 @@ public class CampDavid
         logger = event.getModLog();
         //These 2 init methods will initialize the blocks, and items we have programmed. The Class files that have that method are used to register
         // the items and blocks
-        //CampDavidBlocks.init();
-        //CampDavidItems.init();
-        //RenderHandler.registerEntityRenders();
+        CampDavidBlocks.init();
+        CampDavidItems.init();
+        RenderHandler.registerEntityRenders();
         
        
     }

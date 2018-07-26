@@ -2,6 +2,7 @@ package campdavid.init;
 
 
 import campdavid.CampDavid;
+import campdavid.Reference;
 import campdavid.entities.BasicEntityMob;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
@@ -11,6 +12,8 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.EntityEntry;
 import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
@@ -20,7 +23,7 @@ public class CampDavidEntity {
 	
 
 
-	//@Mod.EventBusSubscriber(modid = Reference.MODID)
+	@Mod.EventBusSubscriber(modid = Reference.MODID)
 	public static class RegistrationHandler {
 
 		/**
@@ -28,7 +31,7 @@ public class CampDavidEntity {
 		 *
 		 * @param event The event
 		 */
-		//@SubscribeEvent
+		@SubscribeEvent
 		public static void registerEntities(final RegistryEvent.Register<EntityEntry> event) {
 			final EntityEntry[] entries = {
 					
